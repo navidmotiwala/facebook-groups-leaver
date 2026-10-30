@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "FB Group Leaver",
+  "version": "1.1",
+  "description": "Leave Facebook groups in small batches from the 'All groups you've joined' page.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/groups/*", "https://web.facebook.com/groups/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
